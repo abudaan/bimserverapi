@@ -11,11 +11,13 @@
     "bimserver",
     "IFC"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/opensourceBIM/BIMserver.git"
+  },
   "author": "Ruben de Laat bimserver.org",
   "main": "bimerserverapi.js",
   "dependencies": {
-    "sha256": "^0.2.0",
-    "string": "^3.3.1",
     "jquery": "^2.1.4",
     "jquery.cookie": "carhartl/jquery-cookie"
   }

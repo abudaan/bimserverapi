@@ -1,16 +1,15 @@
 "use strict"
 
-// http://bimserver.org
+// see: https://github.com/opensourceBIM/BIMserver/wiki/JSON-API
 
-
-import $ from 'jquery';
-import cookie from 'jquery.cookie';
-import string from 'string';
-import sha256string from 'sha256';
-
-export default function BimServerApi(baseUrl, notifier) {
-  if(typeof jQuery !== 'undefined' && $ !== jQuery)
-    var $ = jQuery;
+module.exports = function BimServerApi(baseUrl, notifier) {
+  var $;
+  if(typeof jQuery !== 'undefined' && $ !== jQuery){
+    $ = require('jquery');
+  }
+  if(typeof $.cookie === undefined){
+    var cookie = require('jquery.cookie');
+  }
   var othis = this;
   othis.interfaceMapping = {
     "ServiceInterface": "org.bimserver.ServiceInterface",
@@ -757,6 +756,7 @@ export default function BimServerApi(baseUrl, notifier) {
 
   othis.server.listener = othis.processNotification;
 }
+
 
 function Synchronizer(fetcher) {
   var othis = this;
