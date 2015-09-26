@@ -2,6 +2,7 @@
   "name": "bimserverapi",
   "version": "1.0.0",
   "description": "Javascript API for communicating with a BIM server",
+  "homepage": "https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient",
   "engines": {
     "node": ">=0.10.x"
   },
@@ -10,7 +11,7 @@
     "bimserver",
     "IFC"
   ],
-  "author": "bimserver.org",
+  "author": "Ruben de Laat bimserver.org",
   "main": "bimerserverapi.js",
   "dependencies": {
     "sha256": "^0.2.0",
