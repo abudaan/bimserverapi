@@ -4,12 +4,17 @@
   "engines": {
     "node": "0.10.x"
   },
-  "scripts": {
-  },
+  "keywords":[
+    "BIM",
+    "bimserver",
+    "IFC"
+  ],
+  "author": "bimserver.org",
+  "main": "bimerserverapi.js",
   "dependencies": {
     "sha256": "^0.2.0",
-    "jquery": "^2.1.4",
     "string": "^3.3.1",
+    "jquery": "^2.1.4",
     "jquery.cookie": "carhartl/jquery-cookie"
   }
 }
