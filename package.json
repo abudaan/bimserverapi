@@ -1,6 +1,7 @@
 {
   "name": "bimserverapi",
-  "private": false,
+  "version": "1.0.0",
+  "description": "Javascript API for communicating with a BIM server",
   "engines": {
     "node": "0.10.x"
   },
