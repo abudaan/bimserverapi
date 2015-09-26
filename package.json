@@ -16,7 +16,7 @@
     "url": "git://github.com/opensourceBIM/BIMserver.git"
   },
   "author": "Ruben de Laat bimserver.org",
-  "main": "bimerserverapi.js",
+  "main": "bimserverapi.js",
   "dependencies": {
     "jquery": "^2.1.4",
     "jquery.cookie": "carhartl/jquery-cookie"
