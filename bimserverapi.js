@@ -3,13 +3,13 @@
 // see: https://github.com/opensourceBIM/BIMserver/wiki/JSON-API
 
 module.exports = function BimServerApi(baseUrl, notifier) {
-  var $;
-  if(typeof jQuery !== 'undefined' && $ !== jQuery){
-    $ = require('jquery');
+  if(typeof jQuery === 'undefined' && typeof $ === 'undefined'){
+    var $ = require('jquery');
   }
-  if(typeof $.cookie === undefined){
+  if(typeof $.cookie === 'undefined'){
     var cookie = require('jquery.cookie');
   }
+
   var othis = this;
   othis.interfaceMapping = {
     "ServiceInterface": "org.bimserver.ServiceInterface",
